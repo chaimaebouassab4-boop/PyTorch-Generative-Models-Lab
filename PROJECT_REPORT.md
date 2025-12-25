@@ -102,9 +102,4 @@ Appendix — Repository images (quick links)
 - EVALUATION COMPARING AE vs VAE.png — https://github.com/chaimaebouassab4-boop/PyTorch-Generative-Models-Lab/blob/main/EVALUATION%20COMPARING%20AE%20vs%20VAE.png
 - GAN images — https://github.com/chaimaebouassab4-boop/PyTorch-Generative-Models-Lab/tree/main (see GAN 1.png ... GAN 5.png)
 
----
-
-If you'd like, I can:
-- Open a PR adding these two files to the repository.
-- Create a `requirements.txt` and a simple `run.sh` or CLI modifications to `atelier4.py`.
-- Extract exact hyperparameters from `atelier4.py` and put a runnable example command in the README. Which would you prefer next?
+-
