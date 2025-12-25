@@ -3,6 +3,8 @@ The main objective is to master the PyTorch library by building and training dee
 
 # Lab 4: Deep Learning - Generative Models (AE, VAE & GANs)
 
+https://colab.research.google.com/drive/1XFXLzXbTPgEBsnnK70UaBQxyvR0f_yNT?usp=sharing
+
 ## 📌 Overview
 This laboratory work is part of the **Master in MBD (Data Science)** program at the Faculty of Sciences and Techniques of Tangier (FSTT). The main objective is to master the **PyTorch** library by building and training deep neural network architectures for Generative AI.
 
