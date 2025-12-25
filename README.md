@@ -5,6 +5,28 @@ The main objective is to master the PyTorch library by building and training dee
 
 https://colab.research.google.com/drive/1XFXLzXbTPgEBsnnK70UaBQxyvR0f_yNT?usp=sharing
 
+# PyTorch Generative Models Lab
+
+Overview
+--------
+This repository contains experiments implementing and comparing generative models using PyTorch: an Autoencoder (AE), a Variational Autoencoder (VAE) and a basic GAN. The primary code is in `atelier4.py` and the repository includes output images showing training progress, latent space visualizations, reconstruction quality, and generated samples.
+
+Key files
+---------
+- `atelier4.py` — main experiment script (model definitions, training loops and visualization routines).
+- Images (examples and evaluation results):
+  - [mnist image.png](https://github.com/chaimaebouassab4-boop/PyTorch-Generative-Models-Lab/blob/main/mnist%20image.png) — example input images (MNIST).
+  - [auto encoder build.png](https://github.com/chaimaebouassab4-boop/PyTorch-Generative-Models-Lab/blob/main/auto%20encoder%20build.png) — architecture/build of the autoencoder.
+  - [latent space.png](https://github.com/chaimaebouassab4-boop/PyTorch-Generative-Models-Lab/blob/main/latent%20space.png) — latent space visualization (AE/VAE).
+  - [VISUALIZING LATENT SPACES.png](https://github.com/chaimaebouassab4-boop/PyTorch-Generative-Models-Lab/blob/main/VISUALIZING%20LATENT%20SPACES.png) — more latent space visualizations or traversals.
+  - [training vae.png](https://github.com/chaimaebouassab4-boop/PyTorch-Generative-Models-Lab/blob/main/training%20vae.png) — VAE training curve (loss).
+  - [quality of reconstruction.png](https://github.com/chaimaebouassab4-boop/PyTorch-Generative-Models-Lab/blob/main/quality%20of%20reconstruction.png) — AE/VAE reconstruction examples.
+  - [EVALUATION COMPARING AE vs VAE.png](https://github.com/chaimaebouassab4-boop/PyTorch-Generative-Models-Lab/blob/main/EVALUATION%20COMPARING%20AE%20vs%20VAE.png) — comparison of AE vs VAE (metrics or qualitative).
+  - GAN outputs: [GAN 1.png](https://github.com/chaimaebouassab4-boop/PyTorch-Generative-Models-Lab/blob/main/GAN%201.png), [GAN 2.png](https://github.com/chaimaebouassab4-boop/PyTorch-Generative-Models-Lab/blob/main/GAN%202.png), [GAN 3.png](https://github.com/chaimaebouassab4-boop/PyTorch-Generative-Models-Lab/blob/main/GAN%203.png), [GAN4.png](https://github.com/chaimaebouassab4-boop/PyTorch-Generative-Models-Lab/blob/main/GAN4.png), [GAN 5.png](https://github.com/chaimaebouassab4-boop/PyTorch-Generative-Models-Lab/blob/main/GAN%205.png).
+  - [completed tasks.png](https://github.com/chaimaebouassab4-boop/PyTorch-Generative-Models-Lab/blob/main/completed%20tasks.png) — checklist / project status.
+
+
+
 ## 📌 Overview
 This laboratory work is part of the **Master in MBD (Data Science)** program at the Faculty of Sciences and Techniques of Tangier (FSTT). The main objective is to master the **PyTorch** library by building and training deep neural network architectures for Generative AI.
 
