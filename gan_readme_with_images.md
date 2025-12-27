@@ -1,4 +1,3 @@
-# Deep Learning Lab 4 - Part 2: Generative Adversarial Networks (GANs)
 
 
 ## 📊 Part 2: GANs - Complete Visual Analysis
@@ -6,14 +5,11 @@
 ### 🎯 Objective
 Train a Deep Convolutional GAN (DCGAN) to generate abstract art images similar to the Abstract Art Gallery dataset.
 
----
-
 ## 🏗️ Implementation Overview
 
 ### Dataset Configuration
-![Dataset Configuration](screenshot_dataset.png)
 *Figure 1: Dataset Loading and Configuration*
-
+GAN%202.png
 **Dataset Statistics:**
 - **Total Images:** 2,872 abstract art paintings
 - **Image Size:** 64×64 pixels
@@ -31,9 +27,9 @@ The dataset was successfully loaded with 2 subdirectories containing diverse abs
 
 ### Architecture Definition
 
-![Architecture Summary](screenshot_architecture.png)
 *Figure 2: Generator and Discriminator Architecture Summary*
 
+GAN%204.png
 #### Generator Architecture
 ```
 Input: Random noise vector (100D, 1×1)
@@ -73,9 +69,9 @@ Output: Probability [0, 1]
 ---
 
 ### Training Configuration
-
-![Training Setup](screenshot_training_setup.png)
+GAN%205.png
 *Figure 3: Training Procedure and Hyperparameters*
+
 
 **Hyperparameters:**
 - **Loss Function:** Binary Cross Entropy (BCE)
@@ -85,6 +81,7 @@ Output: Probability [0, 1]
 - **Epochs:** 100
 - **Device:** CUDA (GPU)
 
+EVALUATE%20MODEL%20-%20LOSS%20PLOTS.png
 **Training Procedure:**
 ```
 For each epoch:
@@ -106,8 +103,6 @@ For each epoch:
 
 ### Loss Evolution Over 100 Epochs
 
-![Loss Curves](screenshot_loss_plot.png)
-*Figure 4: Generator and Discriminator Loss Evolution*
 
 **Loss Analysis by Training Phase:**
 
@@ -134,8 +129,9 @@ For each epoch:
 
 ### Training Progress Snapshots
 
-![Training Progress](screenshot_training_log.png)
 *Figure 5: Training Log Showing Key Epochs*
+
+training%20gan.png
 
 | Epoch | D_loss | G_loss | D(x) | D(G(z)) |
 |-------|--------|--------|------|---------|
@@ -156,10 +152,7 @@ For each epoch:
 
 ### Real vs Generated Images Comparison
 
-![Side-by-Side Comparison](screenshot_real_vs_fake.png)
 *Figure 6: Real Abstract Art (Left) vs GAN-Generated (Right)*
-
-![Autoencoder Build](auto%20encoder%20build.png)
 
 (reel%20vs%20generated.png)
 **Quality Assessment:**
@@ -178,9 +171,6 @@ For each epoch:
 ---
 
 ### Individual Sample Comparison
-
-![Detailed Comparison](screenshot_individual_samples.png)
-*Figure 7: Detailed Sample-by-Sample Comparison (Real Top, Generated Bottom)*
 
 **Observations:**
 
@@ -230,15 +220,17 @@ For each epoch:
    - Real: Blue/red geometric
    - Generated: Colorful pixelated
    - ⚠️ Increased noise
-   - ✅ Color variety maintained
+   - ✅ Color variety maintainedevalu
 
 ---
 
 ### Evolution During Training
 
-![Training Evolution](screenshot_evolution.png)
 *Figure 8: Generated Images Quality Evolution from Epoch 1 to 100*
 
+epoch%20evolution.png
+
+epoch%2060%2080%20100.png
 **Progression Analysis:**
 
 #### Epoch 1
@@ -283,37 +275,11 @@ For each epoch:
 
 **Key Insight:** Significant quality improvement from epoch 1 to 100, with most gains occurring between epochs 20-60.
 
----
-
-### Final Generation Grid
-
-![Final Generations](screenshot_final_grid.png)
-*Figure 9: 64 Final Generated Abstract Art Samples*
-
-**Diversity Analysis:**
-
-✅ **Strengths:**
-1. Wide color variety (blues, reds, yellows, greens, grays)
-2. No obvious mode collapse
-3. Different composition styles
-4. Some images with interesting color gradients
-5. Variety in brightness and saturation
-
-⚠️ **Weaknesses:**
-1. Lack of fine details and sharp edges
-2. Pixelation and artifacts in many samples
-3. Less structured compositions than real art
-4. Blurry/watercolor effect in some images
-5. Some samples still noisy
-
----
+-
 
 ## 📊 Quantitative Metrics
 
 ### Final Loss Analysis
-
-![Loss Analysis](screenshot_loss_analysis.png)
-*Figure 10: Final Loss Metrics and Conclusions*
 
 **Final Metrics:**
 - **Discriminator Loss:** 0.1237 ⚠️
@@ -379,7 +345,6 @@ For each epoch:
 
 ### Training Success Assessment
 
-**Overall Rating: ⭐⭐⭐⭐☆ (4/5)**
 
 #### ✅ What Worked Well:
 1. **Stable Training:** No mode collapse or divergence
@@ -483,19 +448,6 @@ With recommended changes:
 3. **Visual Inspection Important:** Numbers don't tell the whole story
 4. **Patience Required:** Quality improves significantly after epoch 50
 
-### Common Pitfalls Avoided
-- ✅ No mode collapse
-- ✅ No training divergence
-- ✅ No gradient vanishing
-- ✅ Maintained diversity
-
-### Issues Encountered
-- ⚠️ Discriminator dominance
-- ⚠️ Detail quality loss
-- ⚠️ Structural coherence challenges
-
----
-
 ## 📚 Technical Details
 
 ### Computational Requirements
@@ -523,9 +475,4 @@ This GAN implementation successfully demonstrates:
 
 The generated images show promise in capturing color distributions and abstract styles, though they lack the fine details and compositional coherence of real artwork. With extended training and architectural improvements, generation quality could reach 8-9/10.
 
----
 
-**Completion Status:** ✅ Lab 4 - Part 2 Complete  
-**Date:** December 2024  
-**Student:** [Your Name]  
-**Master:** MBD - Deep Learning
