@@ -1,10 +1,5 @@
 # Deep Learning Lab 4 - Part 2: Generative Adversarial Networks (GANs)
 
-**Master MBD - Deep Learning**  
-**Professor:** Pr. ELAACHAK LOTFI  
-**University:** Université Abdelmalek Essaadi - FST Tanger
-
----
 
 ## 📊 Part 2: GANs - Complete Visual Analysis
 
@@ -164,6 +159,9 @@ For each epoch:
 ![Side-by-Side Comparison](screenshot_real_vs_fake.png)
 *Figure 6: Real Abstract Art (Left) vs GAN-Generated (Right)*
 
+![Autoencoder Build](auto%20encoder%20build.png)
+
+(reel%20vs%20generated.png)
 **Quality Assessment:**
 
 | Aspect | Real Images | Generated Images | Score |
